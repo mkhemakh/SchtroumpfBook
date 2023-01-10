@@ -1,0 +1,7 @@
+<app-add-schtroumpf (onAddSchtroumpf)="addSchtroumpf($event)"></app-add-schtroumpf>
+<app-schtroumpf-item
+  *ngFor="let schtroumpf of schtroumpfs"
+  [schtroumpf]="schtroumpf"
+  (onDeleteSchtroumpf)="deleteSchtroumpf(schtroumpf)"
+  (onToggleReminder)="toggleReminder(schtroumpf)"
+></app-schtroumpf-item>

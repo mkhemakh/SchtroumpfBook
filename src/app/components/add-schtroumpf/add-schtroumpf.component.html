@@ -1,0 +1,33 @@
+<form *ngIf="showAddSchtroumpf" class="add-form" (ngSubmit)="onSubmit()">
+    <div class="form-control">
+      <label for="text">Schtroumpf name</label>
+      <input
+        type="text"
+        name="text"
+        [(ngModel)]="text"
+        id="text"
+        placeholder="Add Schtroumpf"
+      />
+    </div>
+    <div class="form-control">
+      <label for="day">Role</label>
+      <input
+        type="text"
+        name="role"
+        [(ngModel)]="role"
+        id="role"
+        placeholder="Add Role"
+      />
+    </div>
+    <div class="form-control form-control-check">
+      <label for="reminder">Set Reminder</label>
+      <input
+        type="checkbox"
+        name="reminder"
+        [(ngModel)]="reminder"
+        id="reminder"
+      />
+    </div>
+    <input type="submit" value="Save Schtroumpf" class="btn btn-block" />
+  </form>
+  

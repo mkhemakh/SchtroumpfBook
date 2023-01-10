@@ -1,0 +1,15 @@
+<div
+  [ngClass]="{ reminder: schtroumpf.reminder }"
+  class="schtroumpf"
+  (dblclick)="onToggle(schtroumpf)"
+>
+  <h3>
+    {{ schtroumpf.text }}
+    <fa-icon
+      (click)="onDelete(schtroumpf)"
+      [ngStyle]="{ color: 'red' }"
+      [icon]="faTimes"
+    ></fa-icon>
+  </h3>
+  <p>{{ schtroumpf.role }}</p>
+</div>

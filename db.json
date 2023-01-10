@@ -1,0 +1,16 @@
+{
+  "schtroumpfs": [
+    {
+      "text": "schtroumpheur",
+      "role": "midi minuit",
+      "reminder": false,
+      "id": 4
+    },
+    {
+      "text": "Grogneur",
+      "role": "Guerrier",
+      "reminder": false,
+      "id": 5
+    }
+  ]
+}

@@ -10,9 +10,10 @@ import { Schtroumpf } from '../../Schtroumpf';
 })
 export class AddSchtroumpfComponent implements OnInit {
   @Output() onAddSchtroumpf: EventEmitter<Schtroumpf> = new EventEmitter();
-  text: string = "";
+  name: string = "";
   role: string = "";
-  reminder: boolean = false;
+  email: string = "";
+  pass: string = "";
   showAddSchtroumpf: boolean = false;
   subscription: Subscription;
 
@@ -30,21 +31,24 @@ export class AddSchtroumpfComponent implements OnInit {
     }
 
   onSubmit() {
-    if (!this.text) {
+    if (!this.name) {
       alert('Please add a schtroumpf!');
       return;
     }
 
     const newSchtroumpf: Schtroumpf = {
-      text: this.text,
+      name: this.name,
       role: this.role,
-      reminder: this.reminder,
+      email: this.email,
+      pass: this.pass,
+      friends: []
     };
 
     this.onAddSchtroumpf.emit(newSchtroumpf);
 
-    this.text = '';
+    this.name = '';
     this.role = '';
-    this.reminder = false;
+    this.email = '';
+    this.pass = '';
   }
 }

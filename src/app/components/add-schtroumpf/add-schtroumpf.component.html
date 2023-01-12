@@ -1,16 +1,16 @@
 <form *ngIf="showAddSchtroumpf" class="add-form" (ngSubmit)="onSubmit()">
     <div class="form-control">
-      <label for="text">Schtroumpf name</label>
+      <label for="name">Schtroumpf name</label>
       <input
         type="text"
-        name="text"
-        [(ngModel)]="text"
-        id="text"
-        placeholder="Add Schtroumpf"
+        name="name"
+        [(ngModel)]="name"
+        id="name"
+        placeholder="Add Name"
       />
     </div>
     <div class="form-control">
-      <label for="day">Role</label>
+      <label for="role">Role</label>
       <input
         type="text"
         name="role"
@@ -19,13 +19,24 @@
         placeholder="Add Role"
       />
     </div>
-    <div class="form-control form-control-check">
-      <label for="reminder">Set Reminder</label>
+    <div class="form-control">
+      <label for="email">Email</label>
       <input
-        type="checkbox"
-        name="reminder"
-        [(ngModel)]="reminder"
-        id="reminder"
+        type="email"
+        name="email"
+        [(ngModel)]="email"
+        id="email"
+        placeholder="Add Email"
+      />
+    </div>
+    <div class="form-control">
+      <label for="pass">Password</label>
+      <input
+        type="password"
+        name="pass"
+        [(ngModel)]="pass"
+        id="pass"
+        placeholder="Add Password"
       />
     </div>
     <input type="submit" value="Save Schtroumpf" class="btn btn-block" />

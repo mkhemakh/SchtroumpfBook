@@ -1,10 +1,8 @@
 <div
-  [ngClass]="{ reminder: schtroumpf.reminder }"
   class="schtroumpf"
-  (dblclick)="onToggle(schtroumpf)"
 >
   <h3>
-    {{ schtroumpf.text }}
+    {{ schtroumpf.name }}
     <fa-icon
       (click)="onDelete(schtroumpf)"
       [ngStyle]="{ color: 'red' }"

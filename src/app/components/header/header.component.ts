@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
-  title: string = 'Schtroumpfs';
+  title: string = 'Schtroumpf\'s Book';
   showAddSchtroumpf: boolean = false;
   subscription: Subscription;
 

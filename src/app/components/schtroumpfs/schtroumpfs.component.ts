@@ -24,11 +24,6 @@ export class SchtroumpfsComponent implements OnInit {
       );
   }
 
-  toggleReminder(schtroumpf: Schtroumpf) {
-    schtroumpf.reminder = !schtroumpf.reminder;
-    this.schtroumpfService.updateSchtroumpfReminder(schtroumpf).subscribe();
-  }
-
   addSchtroumpf(schtroumpf: Schtroumpf) {
     this.schtroumpfService.addSchtroumpf(schtroumpf).subscribe((schtroumpf) => this.schtroumpfs.push(schtroumpf));
   }

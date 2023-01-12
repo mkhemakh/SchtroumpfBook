@@ -13,6 +13,7 @@ import { SchtroumpfItemComponent } from './components/schtroumpf-item/schtroumpf
 import { AddSchtroumpfComponent } from './components/add-schtroumpf/add-schtroumpf.component';
 import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
+//import { LoginComponent } from './components/login/login.component';
 
 const appRoutes: Routes = [
   { path: '', component: SchtroumpfsComponent },
@@ -29,6 +30,7 @@ const appRoutes: Routes = [
     AddSchtroumpfComponent,
     AboutComponent,
     FooterComponent,
+    //LoginComponent,
   ],
   imports: [
     BrowserModule,

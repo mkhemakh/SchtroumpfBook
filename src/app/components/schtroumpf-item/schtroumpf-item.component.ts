@@ -10,7 +10,7 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 export class SchtroumpfItemComponent implements OnInit {
   @Input() schtroumpf: Schtroumpf;
   @Output() onDeleteSchtroumpf: EventEmitter<Schtroumpf> = new EventEmitter();
-  @Output() onToggleReminder: EventEmitter<Schtroumpf> = new EventEmitter();
+  /*@Output() onToggleReminder: EventEmitter<Schtroumpf> = new EventEmitter();*/
   faTimes = faTimes;
 
 
@@ -22,7 +22,7 @@ export class SchtroumpfItemComponent implements OnInit {
     this.onDeleteSchtroumpf.emit(schtroumpf);
   }
 
-  onToggle(schtroumpf) {
+  /*onToggle(schtroumpf) {
     this.onToggleReminder.emit(schtroumpf);
-  }
+  }*/
 }

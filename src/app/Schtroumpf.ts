@@ -1,7 +1,9 @@
 export interface Schtroumpf {
     id?: number;
-    text: string;
+    name: string;
     role: string;
-    reminder: boolean;
+    email: string;
+    pass: string;
+    friends: [];
   }
   
